@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a8a3a3;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.mybuton{
+    width: 10%;
+    padding: 10px;
+    background-color: #f70a0a;
+    color: rgb(251, 242, 242);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
