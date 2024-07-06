@@ -16,6 +16,15 @@ if (!isset($_SESSION['username'])) {
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+ <style>
+    body{
+        background-image:url('/web_devops/images/background4.jpeg');
+        background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Makes the background image fixed relative to the viewport */
+    }
+ </style>
     
     <h1>Welcome, <?php echo $_SESSION['username']; ?>!</h1>
     <br>
