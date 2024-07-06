@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c6ccd1;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: #355370;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #dee2e6;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #343a40;
+    color: white;
+}
+
+td a[href^='edit_user.php'] {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 16px;
+    color: #22e610;
+    background-color: #7d8288;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+
+td a[href^='delete_user.php'] {
+    color: red;
+     display: inline-block;
+    padding: 6px 15px;
+    font-size: 16px;
+    background-color: #a8b7c7;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+}
+
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #343a40;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.link{
+    display: inline-block;
+    padding: 10px 13px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #2b6cb3;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.link:hover{
+    background-color: #0056b3;
+}
