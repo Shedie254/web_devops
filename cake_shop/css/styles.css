@@ -1,0 +1,72 @@
+/* Common form styles */
+form {
+    width: 300px;
+    margin: 50px auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+form h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Style for search form specifically */
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.search-form input[type="text"] {
+    width: 80%;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+}
+
+.search-form button {
+    width: 15%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #555;
+}
