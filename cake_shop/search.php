@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'includes/db.php';
 include 'templates/header.php';
 
@@ -17,7 +18,7 @@ $products = $result->fetch_all(MYSQLI_ASSOC);
     <?php if (count($products) > 0): ?>
         <?php foreach ($products as $product): ?>
         <div class="product">
-            <img src="images/<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>">
+            <img src="<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>">
             <h2><?php echo $product['name']; ?></h2>
             <p><?php echo $product['description']; ?></p>
             <p>$<?php echo $product['price']; ?></p>

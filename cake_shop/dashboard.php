@@ -21,11 +21,11 @@ $result = $stmt->get_result();
         <?php while ($row = $result->fetch_assoc()): ?>
             <div class="product">
                 <a href="add_to_cart.php?id=<?php echo $row['id']; ?>">
-                    <img src="<?php echo $row['image']; ?>" alt="<?php echo $row['name']; ?>">
+                <img src="<?php echo $row['image']; ?>" alt="<?php echo $row['name']; ?>">
                 </a>
                 <h2><?php echo $row['name']; ?></h2>
                 <p><?php echo $row['description']; ?></p>
-                <p>$<?php echo number_format($row['price'], 2); ?></p>
+                <p>ksh<?php echo number_format($row['price'], 2); ?></p>
             </div>
         <?php endwhile; ?>
     </div>

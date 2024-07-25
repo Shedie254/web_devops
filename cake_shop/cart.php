@@ -27,17 +27,18 @@ $result = $stmt->get_result();
         <?php while ($row = $result->fetch_assoc()): ?>
             <?php 
             // Construct image path
-            $image_path = 'uploads/' . $row['image'];
+            $image_path = $row['image'];
+                
             ?>
             <div class="product">
                 <?php if (file_exists($image_path) && !empty($row['image'])): ?>
-                    <img src="<?php echo $image_path; ?>" alt="<?php echo htmlspecialchars($row['name']); ?>">
+                    <img src="<?php echo $row['image']; ?>" alt="<?php echo $row['name']; ?>">
                 <?php else: ?>
                     <img src="uploads/default.png" alt="No image available">
                 <?php endif; ?>
                 <h2><?php echo htmlspecialchars($row['name']); ?></h2>
                 <p><?php echo htmlspecialchars($row['description']); ?></p>
-                <p>$<?php echo number_format($row['price'], 2); ?></p>
+                <p>ksh<?php echo number_format($row['price'], 2); ?></p>
                 <p>Quantity: <?php echo $row['quantity']; ?></p>
                 <form action="update_cart.php" method="POST" class="update-form">
                     <input type="hidden" name="cart_id" value="<?php echo $row['id']; ?>">
