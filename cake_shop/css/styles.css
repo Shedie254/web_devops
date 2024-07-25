@@ -1,5 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.search-container {
+    margin-left: auto;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    background-color: transparent; /* Remove background color */
+}
+
+.search-form input[type="text"] {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-form button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #555; /* Same color as hover */
+    color: white;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #777;
+}
+
 /* Common form styles */
-form {
+form.standard-form {
     width: 300px;
     margin: 50px auto;
     padding: 2rem;
@@ -8,21 +74,24 @@ form {
     background-color: #f9f9f9;
 }
 
-form h1 {
+form.standard-form h1 {
     text-align: center;
     margin-bottom: 1rem;
 }
 
-form label {
+form.standard-form label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
 }
 
-form input[type="text"],
-form input[type="email"],
-form input[type="password"],
-form button {
+form.standard-form input[type="text"],
+form.standard-form input[type="email"],
+form.standard-form input[type="password"],
+form.standard-form input[type="number"],
+form.standard-form input[type="file"],
+form.standard-form textarea,
+form.standard-form button {
     width: 100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
@@ -31,42 +100,36 @@ form button {
     box-sizing: border-box;
 }
 
-form button {
+form.standard-form button {
     background-color: #333;
     color: white;
     border: none;
     cursor: pointer;
 }
 
-form button:hover {
+form.standard-form button:hover {
     background-color: #555;
 }
 
-/* Style for search form specifically */
-.search-form {
+form.standard-form textarea {
+    resize: vertical;
+}
+
+/* Product styles */
+.products {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    margin: 20px auto;
 }
 
-.search-form input[type="text"] {
-    width: 80%;
-    padding: 0.5rem;
-    margin-right: 1rem;
-    border-radius: 5px;
+.product {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem;
+    width: 200px;
+    text-align: center;
 }
 
-.search-form button {
-    width: 15%;
-    padding: 0.5rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-}
-
-.search-form button:hover {
-    background-color: #555;
+.product img {
+    max-width: 100%;
 }
