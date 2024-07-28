@@ -6,7 +6,7 @@
     <title>Footer Design</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-    <!-- Other content of your page -->
+
 
     <footer>
         <div class="footer-container">
@@ -51,7 +51,7 @@
             <div class="footer-section follow-us">
                 <h2>Follow Us</h2>
                 <div class="social-links">
-                <a href="https://facebook.com/Xadi.Shadi" target = "_blank"><img src="icons/facebook.svg" alt="Facebook"></a>
+                <a href="https://facebook.com/" target = "_blank"><img src="icons/facebook.svg" alt="Facebook"></a>
                 <a href="https://x.com/" target = "_blank"><img src="icons/twitter.svg" alt="Twitter"></a>
                 <a href = "https://wa.me/254796200224" target= "_blank"><img src="icons/whatsapp.svg" alt="whatsapp"></a>
             </div>

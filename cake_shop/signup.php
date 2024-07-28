@@ -73,12 +73,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             height: 100vh;
             margin: 0;
             flex-direction: column;
-            padding-top: 70px; /* To account for fixed header */
+            padding-top: 70px;  
         }
         .header {
             width: 100%;
             background-color: #333;
-            padding: 20px; /* Increased padding */
+            padding: 20px; 
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
             justify-content: space-between;
@@ -87,7 +87,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             top: 0;
             left: 0;
             z-index: 1000;
-            font-size: 1.2em; /* Increased font size */
+            font-size: 1.2em; 
         }
         .header a {
             color: white;
