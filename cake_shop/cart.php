@@ -107,17 +107,15 @@ include 'templates/footer.php';
 
 .checkout-link {
     display: block;
-    margin-top: 10px;
-    margin-left: 200px; 
-    margin-right: 200px;
+    margin: 10px auto;
     text-align: center;
     background-color: #007bff;
     color: white;
-    padding: 5px 10px; /* Reduced padding for a smaller link */
+    padding: 5px 10px; 
     border-radius: 5px;
     text-decoration: none;
-    font-size: 0.8rem; /* Reduced font size */
-    width: auto; /* Ensure the width is auto-adjusted to the content */
+    font-size: 0.8rem; 
+    width: 150px; 
 }
 
 

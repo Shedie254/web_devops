@@ -11,8 +11,13 @@
     <footer>
         <div class="footer-container">
             <div class="footer-section about">
-                <h2>to our customers</h2>
-                <p>Welcome to Sweet Temptations Bakery, where every bite is a journey into delightful flavors. Our talented bakers create tantalizing treats using only the finest ingredients and traditional techniques. From classic vanilla sponge cakes to decadent chocolate truffles, each creation ensures an unforgettable taste experience.
+                <h2>Dear Customer</h2>
+                <p>Welcome to Sweet Temptations Bakery, 
+                    where every bite is a journey into delightful flavors.
+                     Our talented bakers create tantalizing treats using 
+                     only the finest ingredients and traditional techniques. 
+                     From classic vanilla sponge cakes to decadent chocolate truffles,
+                      each creation ensures an unforgettable taste experience.
                       </p>
             </div>
             <div class="footer-section links">
@@ -47,8 +52,9 @@
                 <h2>Follow Us</h2>
                 <div class="social-links">
                 <a href="https://facebook.com/Xadi.Shadi" target = "_blank"><img src="icons/facebook.svg" alt="Facebook"></a>
-                <a href="https://x.com/shedie25/" target = "_blank"><img src="icons/twitter.svg" alt="Twitter"></a>
-                </div>
+                <a href="https://x.com/" target = "_blank"><img src="icons/twitter.svg" alt="Twitter"></a>
+                <a href = "https://wa.me/254796200224" target= "_blank"><img src="icons/whatsapp.svg" alt="whatsapp"></a>
+            </div>
             </div>
         </div>
         <div class="footer-bottom">

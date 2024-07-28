@@ -1,10 +1,11 @@
+            /* body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+            /* header */
 header {
     background-color: #333;
     color: white;
@@ -33,7 +34,7 @@ header nav ul li a {
 header nav ul li a:hover {
     text-decoration: underline;
 }
-
+                /* search container form */
 .search-container {
     margin-left: auto;
 }
@@ -41,7 +42,7 @@ header nav ul li a:hover {
 .search-form {
     display: flex;
     align-items: center;
-    background-color: transparent; /* Remove background color */
+    background-color: transparent; 
 }
 
 .search-form input[type="text"] {
@@ -50,12 +51,13 @@ header nav ul li a:hover {
     border-radius: 5px;
     border: 1px solid #ccc;
 }
+            /* search button */
 
 .search-form button {
     padding: 0.5rem;
     border: none;
     border-radius: 5px;
-    background-color: #555; /* Same color as hover */
+    background-color: #555; 
     color: white;
     cursor: pointer;
 }
@@ -64,7 +66,7 @@ header nav ul li a:hover {
     background-color: #777;
 }
 
-/* Common form styles */
+                    /* Common form styles */
 form.standard-form {
     width: 300px;
     margin: 50px auto;
@@ -115,7 +117,7 @@ form.standard-form textarea {
     resize: vertical;
 }
 
-/* Product styles */
+                    /* Product styles */
 .products {
     display: flex;
     flex-wrap: wrap;
@@ -133,6 +135,7 @@ form.standard-form textarea {
 .product img {
     max-width: 100%;
 }
+                /* footer */
 footer {
     background-color: #333;
     color: white;

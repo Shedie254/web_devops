@@ -42,12 +42,10 @@ include 'templates/footer.php';
     padding: 20px;
 }
 
-nav {
-    margin-bottom: 20px;
-}
+
 
 nav a {
-    margin-right: 15px;
+    
     text-decoration: none;
     color: #007bff;
 }
