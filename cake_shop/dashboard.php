@@ -17,16 +17,6 @@ $result = $stmt->get_result();
 <div class="container">
     <h1>Welcome to the Dashboard</h1>
     
-    <nav>
-        <a href="index.php">Home</a>
-        <a href="account.php">Account</a>
-        <a href="cart.php">Cart</a>
-        <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin'): ?>
-            <a href="add_product.php">Add Product</a>
-        <?php endif; ?>
-        <a href="logout.php">Logout</a>
-    </nav>
-    
     <div class="products">
         <?php while ($row = $result->fetch_assoc()): ?>
             <div class="product">

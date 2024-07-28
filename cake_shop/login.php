@@ -79,6 +79,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .search-form {
             display: flex;
             align-items: center;
+            margin-left: auto;
+            margin-right: 30px;
         }
         .search-form input[type="text"] {
             padding: 0.5rem;

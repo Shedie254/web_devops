@@ -13,8 +13,12 @@
             <li><a href="index.php">Home</a></li>
             <?php if (isset($_SESSION['user_id'])): ?>
                 <li><a href="account.php">Account</a></li>
-                <li><a href="cart.php">Cart</a></li>
-                <li><a href="add_product.php">Add Product</a></li>
+                <?php if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin'): ?>
+                    <li><a href="cart.php">Cart</a></li>
+                <?php endif; ?>
+                <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin'): ?>
+                    <li><a href="add_product.php">Add Product</a></li>
+                <?php endif; ?>
                 <li><a href="dashboard.php">Dashboard</a></li>
                 <li><a href="logout.php">Logout</a></li>
             <?php else: ?>
