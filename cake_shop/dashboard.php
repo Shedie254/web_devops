@@ -17,11 +17,21 @@ $result = $stmt->get_result();
 <div class="container">
     <h1>Welcome to the Dashboard</h1>
     
+    <nav>
+        <a href="index.php">Home</a>
+        <a href="account.php">Account</a>
+        <a href="cart.php">Cart</a>
+        <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin'): ?>
+            <a href="add_product.php">Add Product</a>
+        <?php endif; ?>
+        <a href="logout.php">Logout</a>
+    </nav>
+    
     <div class="products">
         <?php while ($row = $result->fetch_assoc()): ?>
             <div class="product">
                 <a href="add_to_cart.php?id=<?php echo $row['id']; ?>">
-                <img src="<?php echo $row['image']; ?>" alt="<?php echo $row['name']; ?>">
+                    <img src="<?php echo $row['image']; ?>" alt="<?php echo $row['name']; ?>">
                 </a>
                 <h2><?php echo $row['name']; ?></h2>
                 <p><?php echo $row['description']; ?></p>
@@ -40,6 +50,20 @@ include 'templates/footer.php';
 <style>
 .container {
     padding: 20px;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 .products {
